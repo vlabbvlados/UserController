@@ -64,11 +64,11 @@ This API provides endpoints to manage users.
 * **URL:** `/users`
 * **Description:** Creates a new user.
 * **Request Body:**
-    	```json
-    	 {
-            "name": "Alex"
-    	 }
-		```
+  ```json
+   {
+       "name": "Alex"
+   }
+   ```
 * **Success Response:**
     * **Code:** `200 OK` (or `201 Created` - both are common)
 * **Error Response (Validation):**
@@ -86,11 +86,11 @@ This API provides endpoints to manage users.
 * **URL:** `/users/{id}`
 * **Description:** Updates the name of an existing user.
 * **Request Body:**
-    	```json
-    	 {
-            "name": "Alexander"
-    	 }
-    	```
+  ```json
+   {
+       "name": "Alexander"
+   }
+  ```
 * **Success Response:**
     * **Code:** `200 OK`
 
