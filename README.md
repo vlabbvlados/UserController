@@ -65,9 +65,9 @@ This API provides endpoints to manage users.
 * **Description:** Creates a new user.
 * **Request Body:**
     	```json
-    {
-        "name": "Alex"
-    }
+    	{
+        	"name": "Alex"
+    	}
 		```
 * **Success Response:**
     * **Code:** `200 OK` (or `201 Created` - both are common)
@@ -75,9 +75,9 @@ This API provides endpoints to manage users.
     * **Code:** `400 Bad Request`
     * **Content:** 
     	```json
-        {
+        	{
             "name": "User name cannot be blank"
-        }
+        	}
     	```
 
 ### 4. Update an Existing User
@@ -87,9 +87,9 @@ This API provides endpoints to manage users.
 * **Description:** Updates the name of an existing user.
 * **Request Body:**
     	```json
-    {
+    	{
         "name": "Alexander"
-    }
+    	}
     	```
 * **Success Response:**
     * **Code:** `200 OK`
