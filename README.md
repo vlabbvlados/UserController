@@ -65,9 +65,9 @@ This API provides endpoints to manage users.
 * **Description:** Creates a new user.
 * **Request Body:**
     	```json
-    	{
-        	"name": "Alex"
-    	}
+    		{
+        		"name": "Alex"
+    		}
 		```
 * **Success Response:**
     * **Code:** `200 OK` (or `201 Created` - both are common)
@@ -76,7 +76,7 @@ This API provides endpoints to manage users.
     * **Content:** 
     	```json
         	{
-            "name": "User name cannot be blank"
+            	"name": "User name cannot be blank"
         	}
     	```
 
@@ -88,7 +88,7 @@ This API provides endpoints to manage users.
 * **Request Body:**
     	```json
     	{
-        "name": "Alexander"
+        	"name": "Alexander"
     	}
     	```
 * **Success Response:**
