@@ -21,7 +21,8 @@ This API provides endpoints to manage users.
 * **Description:** Retrieves a list of all users.
 * **Success Response:**
     * **Code:** `200 OK`
-    * **Content:** ```json
+    * **Content:** 
+    ```json
         [
             {
                 "id": 1,
@@ -32,7 +33,7 @@ This API provides endpoints to manage users.
                 "name": "Maria"
             }
         ]
-        ```
+    ```
 
 ### 2. Get User by ID
 
@@ -41,19 +42,21 @@ This API provides endpoints to manage users.
 * **Description:** Retrieves a single user by their unique ID.
 * **Success Response:**
     * **Code:** `200 OK`
-    * **Content:** ```json
+    * **Content:** 
+    	```json
         {
             "id": 1,
             "name": "Alex"
         }
-        ```
+       ```
 * **Error Response:**
     * **Code:** `404 Not Found`
-    * **Content:** ```json
+    * **Content:** 
+    	```json
         {
             "error": "User not found with id: 999"
         }
-        ```
+    	```
 
 ### 3. Create a New User
 
@@ -61,20 +64,21 @@ This API provides endpoints to manage users.
 * **URL:** `/users`
 * **Description:** Creates a new user.
 * **Request Body:**
-    ```json
+    	```json
     {
         "name": "Alex"
     }
-    ```
+		```
 * **Success Response:**
     * **Code:** `200 OK` (or `201 Created` - both are common)
 * **Error Response (Validation):**
     * **Code:** `400 Bad Request`
-    * **Content:** ```json
+    * **Content:** 
+    	```json
         {
             "name": "User name cannot be blank"
         }
-        ```
+    	```
 
 ### 4. Update an Existing User
 
@@ -82,11 +86,11 @@ This API provides endpoints to manage users.
 * **URL:** `/users/{id}`
 * **Description:** Updates the name of an existing user.
 * **Request Body:**
-    ```json
+    	```json
     {
         "name": "Alexander"
     }
-    ```
+    	```
 * **Success Response:**
     * **Code:** `200 OK`
 
